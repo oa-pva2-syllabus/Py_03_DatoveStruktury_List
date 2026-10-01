@@ -1,31 +1,32 @@
-# Seznam může obsahovat libovolné objekty, dokonce i jiné seznamy (podseznamy). Tato datová struktura se nazývá vnořený seznam.
-
+# Úkol D – Vnořené seznamy
+#
+# Seznam může obsahovat libovolné objekty, dokonce i jiné seznamy (podseznamy).
+# Tato datová struktura se nazývá vnořený seznam.
 # Vnořené seznamy můžete použít k uspořádání dat do hierarchických struktur.
-
+#
 # Vnořený seznam lze vytvořit zápisem posloupnosti podseznamů oddělených čárkou:
-
-# Vnořený_seznam = [[1, 2, 3], [4, 5], 6]
+#
+#   nested_list = [[1, 2, 3], [4, 5], 6]
+#
 # K položkám vnořeného seznamu můžete přistupovat pomocí indexů stejně jako dříve:
-
-#print(nested_list[1])
-#print(nested_list[2])
-#Výstup:
-
-#[4, 5]
-#6
-#K položkám v rámci vnořených seznamů můžete přistupovat pomocí více indexů. Pro přístup k číslu 1 z vnořeného_seznamu použijte dvakrát index 0. Nejprve přistupujete k prvku [1,2,3] a poté k prvnímu prvku tohoto vnořeného seznamu:
-
-#print(nested_list[0][0])
-#Výstup:
-
-#1
-# Použijte indexování pro přístup k prvkům 9 a 10 z vnořeného seznamu my_list a vypište je.
+#
+#   print(nested_list[1])     # [4, 5]
+#   print(nested_list[2])     # 6
+#
+# K položkám v rámci vnořených seznamů můžete přistupovat pomocí více indexů.
+# Pro přístup k číslu 1 použijte dvakrát index 0. Nejprve přistupujete k prvku [1, 2, 3]
+# a poté k prvnímu prvku tohoto vnořeného seznamu:
+#
+#   print(nested_list[0][0])  # 1
+#
+# Místo `...` doplňte své řešení – použijte indexování, ne přímo číslo.
 
 my_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9], 10]
 
-print('Print number 9 from the nested list: ')
-???
+# D1 Do `devet` uložte pomocí indexování číslo 9 z vnořeného seznamu my_list.
+devet = ...
+print('Číslo 9 z vnořeného seznamu:', devet)
 
-
-print('Print number 10 from the nested list: ')
-???
+# D2 Do `deset` uložte pomocí indexování číslo 10 ze seznamu my_list.
+deset = ...
+print('Číslo 10 z vnořeného seznamu:', deset)
