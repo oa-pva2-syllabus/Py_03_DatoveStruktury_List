@@ -1,93 +1,136 @@
-# 1
+# Úkol E – List souhrn
 #
-# Vytvořte seznam `mocniny` s hodnotami `1,2,4,8,16,32`
-# 1. Do seznamu `mocniny` přidejte pomocí vzorce druhé mocniny 6 a 7.
-# 2. Odeberte první prvek
+# Místo `...` doplňte své řešení. Výsledky ukládejte do uvedených proměnných
+# a vypisujte je, ať vidíte, co program spočítal.
+
+
+# E1
 #
-# Reseni 1:
+# Seznam `mocniny` obsahuje mocniny čísla 2.
+# 1. Na konec seznamu přidejte 2 na 6 a 2 na 7 (vypočítejte operátorem **).
+# 2. Odeberte první prvek.
+
+mocniny = [1, 2, 4, 8, 16, 32]
+
+print(mocniny)
 
 
-
-# 2
+# E2
 #
-# Napište program, který prohodí první prvek seznamu s třetím. Výsledek uložte do `result` a oba seznamy vytiskněte.
+# Prohoďte první prvek seznamu `cisla` s třetím. Výsledek uložte do `result`,
+# původní seznam `cisla` se nesmí změnit. Oba seznamy vytiskněte.
 #
-# Vstupní data: 23, 65, 19, 90
-# Očekávaný výstup: 19, 65, 23, 90
+# Očekávaný výstup: [23, 65, 19, 90] a [19, 65, 23, 90]
+
+cisla = [23, 65, 19, 90]
+result = ...
+print(cisla)
+print(result)
+
+
+# E3
 #
-# Reseni 2:
-
-
-
-# 3
+# Ze seznamu `barvy` odstraňte první, čtvrtý a pátý prvek a seznam vytiskněte.
+# Pozor: po odstranění prvku se indexy dalších prvků posunou.
 #
-# Napište program, který vytiskne seznam, jenž bude mít odstraněny 1, 4 a pátý prvek z seznamu.
+# Očekávaný výstup: ['Green', 'White', 'Yellow']
+
+barvy = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+
+print(barvy)
+
+
+operation = [1456, 5, 98, 4087, 12, 448, 4, 8, 14, 264, 10, 88, 379, 32, 2971]
+
+# E4
 #
-# Vstupní data: Red, Green, White, Black, Pink, Yellow
-# Očekávaný výstup: Green, White, Yellow
+# Pomocí funkcí pro hledání extrémních hodnot uložte nejmenší prvek seznamu `operation`
+# do `nejmensi` a největší do `nejvetsi`. Výsledek s popiskem vytiskněte.
 
-# Reseni 3:
+nejmensi = ...
+nejvetsi = ...
 
 
-# 4
+# E5
 #
-# operation: 1456,5,98,4087,012,448,4,8,14,264,10,88,379,32,2971
+# Nejmenší a největší prvek najděte jiným způsobem než funkcemi min() a max()
+# (např. pomocí seřazeného seznamu). Uložte je do `nejmensi2` a `nejvetsi2`.
+
+nejmensi2 = ...
+nejvetsi2 = ...
+
+
+# E6
 #
-# S využitím funkcí pro hledání extrémních hodnot napište program, který vrátí nejmenší a největší prvek v seznamu operation. Výsledek s popiskem vytiskněte uživateli.
+# Do `obracene` uložte prvky seznamu `operation` v opačném pořadí,
+# tzn. první prvek bude poslední, druhý předposlední atd.
+
+obracene = ...
+print(obracene)
+
+
+cars = ['Suzuki', 'Lamborghini', 'lexus', 'porsche', 'Ferrari', 'vojvo', 'chevrolet', 'DS', 'Jeep', 'Mini', 'Škoda']
+
+# E7
 #
-# Reseni 4:
+# V seznamu `cars` nahraďte značku auta 'vojvo' hodnotou 'Volvo'.
+
+print(cars)
 
 
-
-# 5
+# E8
 #
-# Pro seznam `operation` opět najděte nejmenší a největší prvek. Nalezněte jiný způsob než za požití funkcí pro hledání minima a maxima.
+# Ze seznamu `cars` zkopírujte druhý až čtvrtý prvek do nového seznamu `luxuryCars`.
+
+luxuryCars = ...
+print(luxuryCars)
+
+
+# E9
 #
-# Reseni 5:
+# Součet všech prvků seznamu `operation` uložte do proměnné `operationSum`.
+
+operationSum = ...
+print(operationSum)
 
 
-
-# 6
+# E10
 #
-# Pro seznam `operation` prohodťe pořadí prvků tzn. první prvek bude poslední, druhý předposlední atd.
+# Počet aut v seznamu `cars` uložte do `pocetAut`.
+
+pocetAut = ...
+print(pocetAut)
+
+
+# E11
 #
-# Reseni 6:
+# Index auta 'Ferrari' v seznamu `cars` uložte do `indexFerrari`.
+
+indexFerrari = ...
+print(indexFerrari)
 
 
-
-# 7
+# E12
 #
-# `cars: ['Suzuki','Lamborghini','lexus', 'porsche', 'Ferrari', 'vojvo', 'chevrolet', 'DS', 'Jeep', 'Mini', 'Škoda']`
+# Do `serazenaAuta` uložte seřazený seznam aut. Původní seznam `cars` se nesmí změnit.
+# Všimněte si, kam se seřadily značky psané malým písmenem.
+
+serazenaAuta = ...
+print(serazenaAuta)
+print(cars)
+
+
+# E13
 #
-# 1. V seznamu cars nahraďte značku auta vojvo hodnotou `Volvo`
-# 2. Ze seznamu cars zkopírujte druhý až čtvrtý prvek do nového seznamu luxuryCars
-#
-# Reseni 7:
-
-
-
-# 8
-#
-# Najděte funkce, pomocí kterých provedete následující operace s seznamem:
-# 1. Sečíst všechny prvky pole `operation`
-# 2. Součet všech prvků pole operation uložte do proměnné `operationSum`
-# 3. Vrátí z seznamu `cars` index auta _Ferrari_
-# 4. Seřadí všechny prvky seznamu `cars`.
-#
-# Reseni 8:
-
-
-
-# 9
-#
-# Zamyslete/vyzkoušejte a popišete, co provede následující kód. Formou komentáře napište obsah seznamu `myList1` a `myList2`
+# Zamyslete se, co provede následující kód. Nejdřív si tipněte, pak kód spusťte.
 #
 # myList1 = [1, 2, 3, 4]
 # myList2 = myList1
-# print(myList1)
-# print(myList2)
 # myList1.append(5)
 #
-# Reseni 9:
+# 1. Do `odpoved` uložte (jako seznam) obsah `myList2` po provedení kódu.
+# 2. Formou komentáře vysvětlete, proč tomu tak je.
 
+odpoved = ...
 
+# Vysvětlení:
